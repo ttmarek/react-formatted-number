@@ -1,0 +1,52 @@
+{
+  "name": "react-formatted-number",
+  "version": "0.0.0",
+  "description": "A React component for formatted number inputs (e.g telephone, credit card)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "lint": "eslint src",
+    "check": "npm run lint && jest --coverage",
+    "build": "babel src --out-dir lib --ignore __tests__",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttmarek/react-formatted-number.git"
+  },
+  "author": "Thomas Marek <ttmarek@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttmarek/react-formatted-number/issues"
+  },
+  "homepage": "https://github.com/ttmarek/react-formatted-number#readme",
+  "keywords": [
+    "react",
+    "formatted input",
+    "input",
+    "component"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^20.0.4",
+    "react": "^16.0.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  }
+}
