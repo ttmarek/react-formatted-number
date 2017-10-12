@@ -2,6 +2,10 @@ export default function formatNumber(format, number) {
   let formattedNumber = format;
   const lengthOfNumber = number.length;
 
+  if (lengthOfNumber === 0) {
+    return '';
+  }
+
   for (let i = 0; i < lengthOfNumber; i++) {
     formattedNumber = formattedNumber.replace('#', number[i]);
   }

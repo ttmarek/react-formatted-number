@@ -2,10 +2,12 @@
   "name": "react-formatted-number",
   "version": "0.0.0",
   "description": "A React component for formatted number inputs (e.g telephone, credit card)",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest --watch",
+    "test:app": "npm start --prefix ./test-app",
     "lint": "eslint src",
+    "flow": "flow",
     "check": "npm run lint && jest --coverage",
     "build": "babel src --out-dir lib --ignore __tests__",
     "prepublish": "npm run build"
@@ -29,13 +31,18 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^20.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.7.2",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.56.0",
+    "prop-types": "^15.6.0",
     "jest": "^20.0.4",
     "react": "^16.0.0"
   },
